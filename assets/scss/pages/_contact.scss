@@ -1,0 +1,114 @@
+.contact{
+    .btn-group{
+        box-shadow: none;
+    }
+
+    .c_list{
+        background: $white;
+        padding: 10px 2px;
+        margin-bottom: 1px;
+        position: relative;
+
+        &:hover{
+            background: $orange-50;
+
+            .action_btn{
+                display: block;
+            }
+        }
+
+        .action_btn{
+            display: none;
+            position: absolute;
+            right: 50px;
+            top: 17px;
+            .btn{
+                box-shadow: none;
+            }
+        }
+
+        .control{
+            float: left;
+            width: 50px;
+            text-align: center;
+            .checkbox{
+                label{
+                    margin-bottom: 3px;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        .avatar{
+            float: left;
+            margin-right: 20px;
+            img{
+                width: 45px;
+                margin-top: 4px;
+            }
+        }
+
+        .u_name{
+            float: left;
+
+            .c_name{
+                @extend .m-b-0;
+                margin-top: 3px;               
+                font-size: 17px;
+                font-weight: 600;
+            }            
+        }
+
+        .email{
+            display: block;
+            @extend .m-b-5;
+            @extend .m-t-0;
+            a{
+                color: $grey-700;
+               &:hover{
+                   text-decoration: none;
+               } 
+            }
+            i{
+                font-size: 15px;
+                width: 25px;
+                text-align: center;
+            }
+        }
+
+        .phone{            
+            margin-top: 7px;
+            @extend .m-b-0;
+            font-weight: normal;
+            color: $grey-600;
+
+            i{
+                width: 20px;
+                font-size: 15px;
+            }
+        }
+
+        address{
+            @extend .m-b-0;
+
+            i{
+                width: 25px;
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        .header-dropdown{            
+            float: right;
+            margin-top: 8px;
+            margin-right: 10px;
+
+            .dropdown{
+                .dropdown-toggle{
+                    padding: 10px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

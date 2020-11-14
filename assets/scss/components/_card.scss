@@ -1,0 +1,134 @@
+﻿.card {
+    background: #fff;
+    min-height: 50px;
+    box-shadow:none;
+    position: relative;
+    margin-bottom: 30px;
+    transition: .5s;
+    border-radius: $border-radius-base;
+    border: none;
+    //border-top: 1px solid rgba(204, 204, 204, 0.8);
+
+    .card-inside-title {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        display: block;
+        font-size: 15px;
+        color: #000;
+        small {
+            color: #999;
+            display: block;
+            font-size: 11px;
+            margin-top: 5px;
+            a {
+                color: #777;
+                font-weight: bold;
+            }
+        }
+    }
+    .card-inside-title:first-child {
+        margin-top: 0;
+    }
+    .bg-red,
+    .bg-pink,
+    .bg-purple,
+    .bg-deep-purple,
+    .bg-indigo,
+    .bg-blue,
+    .bg-light-blue,
+    .bg-cyan,
+    .bg-teal,
+    .bg-green,
+    .bg-light-green,
+    .bg-lime,
+    .bg-yellow,
+    .bg-amber,
+    .bg-orange,
+    .bg-deep-orange,
+    .bg-brown,
+    .bg-grey,
+    .bg-blue-grey,
+    .bg-blush,
+    .bg-black {
+        border-bottom: none !important;
+        color: #fff !important;
+        h2,
+        small,
+        .material-icons {
+            color: #fff !important;
+        }
+        .badge {
+            background-color: #fff;
+            color: #555;
+        }
+    }
+    .header {
+        color: #555;
+        padding:15px;
+        position: relative;       
+        box-shadow: none;
+        margin-bottom: 0;       
+
+        .header-dropdown {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            a {
+                padding: 5px 10px;
+            }
+            .dropdown-menu {
+                li {
+                    display: block !important;
+                }
+            }
+            li {
+                @extend .inlineblock;
+            }
+            i {
+                font-size: 20px;
+                color: #999;
+                @include transition(all .5s);
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+        h2 {
+            margin: 0;
+            font-size: 17px;
+            font-weight:600;
+            color: #111;            
+            small {
+                @extend .displayblock;
+                font-size: 13px;
+                margin-top: 5px;
+                color: #999;
+                line-height: 15px;                
+                a {
+                    font-weight: bold;
+                    color: #777;
+                }
+            }
+        }
+    }
+    .p-15 {
+        padding: 15px !important;
+    }
+    .body {
+        font-size: 14px;
+        color: #444;
+        padding: 15px;
+        font-weight: 400;
+        @for $i from 1 through 12 {
+            .col-xs-#{$i},
+            .col-sm-#{$i},
+            .col-md-#{$i},
+            .col-lg-#{$i} {
+               // margin-bottom: 20px;
+            }
+        }
+    }
+}
